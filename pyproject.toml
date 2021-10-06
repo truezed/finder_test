@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "finder"
+version = "0.1.0"
+description = ""
+authors = ["zed <kot.zakhar27@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.24.4"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+pytest-mypy = "^0.8.1"
+pytest-pylint = "^0.18.0"
+pytest-flake8 = "^1.0.7"
+
+[tool.pylint.'FORMAT']
+max-line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
